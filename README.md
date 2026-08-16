@@ -19,7 +19,7 @@ Cara menambahkan screenshot:
 3. Ganti path di bawah ini sesuai nama file kamu
 -->
 
-![Tampilan StudyMate AI] (Screenshot (1184).png)
+![Screenshot (1184).png] 
 
 *Contoh percakapan menjelaskan konsep algoritma pemrograman*
 
