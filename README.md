@@ -12,7 +12,14 @@ Asisten belajar berbasis AI yang membantu menjelaskan materi pelajaran secara si
 
 ## 📸 Tampilan
 
-![Tampilan StudyMate AI](./screenshots/demo.png)
+<!--
+Cara menambahkan screenshot:
+1. Buat folder baru bernama "screenshots" di root repo kamu
+2. Upload gambar hasil screenshot ke folder tersebut (misal: screenshots/demo.png)
+3. Ganti path di bawah ini sesuai nama file kamu
+-->
+
+![Tampilan StudyMate AI] (Screenshot (1184).png)
 
 *Contoh percakapan menjelaskan konsep algoritma pemrograman*
 
@@ -27,7 +34,7 @@ Asisten belajar berbasis AI yang membantu menjelaskan materi pelajaran secara si
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/gavinadhif/studymate-ai.git
+git clone https://github.com/username/studymate-ai.git
 cd studymate-ai
 ```
 
@@ -56,7 +63,7 @@ node server.js
 ### 5. Buka di browser
 
 ```
-http://localhost:3000
+https://studymate-ai-snsf.vercel.app/
 ```
 
 ## 📁 Struktur Project
@@ -67,10 +74,7 @@ studymate-ai/
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
-├── screenshots/
-│   └── demo.png
 ├── server.js
-├── vercel.json
 ├── package.json
 ├── .env
 └── .gitignore
@@ -83,10 +87,6 @@ studymate-ai/
 3. AI akan memberikan penjelasan berdasarkan pertanyaan kamu
 4. Lanjutkan bertanya — AI akan mengingat konteks percakapan sebelumnya
 5. Klik **"Percakapan Baru"** untuk memulai topik yang berbeda
-
-## 🌐 Live Demo
-
-[studymate-ai-snsf.vercel.app](https://studymate-ai-snsf.vercel.app)
 
 ## 📄 Lisensi
 
