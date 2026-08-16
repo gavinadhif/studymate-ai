@@ -19,7 +19,8 @@ Cara menambahkan screenshot:
 3. Ganti path di bawah ini sesuai nama file kamu
 -->
 
-![Screenshot (1184).png] 
+<img width="1920" height="1080" alt="Screenshot (1184)" src="https://github.com/user-attachments/assets/1e6dd8c7-e144-4e9d-a42c-1a00f83b3848" />
+
 
 *Contoh percakapan menjelaskan konsep algoritma pemrograman*
 
