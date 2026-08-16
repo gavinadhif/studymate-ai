@@ -22,20 +22,26 @@ app.get("/", (req, res) => {
 
 app.post("/api/ask", async (req, res) => {
   try {
-   const { question } = req.body;
+    const { messages } = req.body;
 
-console.log("Request masuk:", question);
-
-if (!question || !question.trim()) {
+    if (!Array.isArray(messages) || messages.length === 0) {
       return res.status(400).json({
-        error: "Pertanyaan tidak boleh kosong."
+        error: "Percakapan tidak boleh kosong."
       });
     }
 
+    // Ubah history frontend jadi format contents Gemini
+    const contents = messages.map((m) => ({
+      role: m.role === "ai" ? "model" : "user",
+      parts: [{ text: m.text }]
+    }));
+
+    console.log("Request masuk, jumlah pesan:", contents.length);
+
     const response = await ai.models.generateContent({
-  model: "gemini-3.1-flash-lite",
-  contents: question
-});
+      model: "gemini-3.1-flash-lite",
+      contents
+    });
 
     res.json({
       answer: response.text
@@ -43,7 +49,6 @@ if (!question || !question.trim()) {
 
   } catch (error) {
     console.error("Gemini API Error:", error);
-
     res.status(500).json({
       error: error.message || String(error)
     });
